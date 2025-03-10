@@ -58,7 +58,7 @@ header {
     width: 100%;
     z-index: 1000;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
 }
 
 /* Navbar styles */
@@ -68,7 +68,7 @@ header {
     align-items: center;
     background-color: white;
     color: #616160;
-    border-bottom: 1px solid #616160;
+    border-bottom: 2px solid #be7475;
 }
 
 .navbar-empty {
@@ -147,7 +147,7 @@ header {
     left: 0;
     width: 50px;
     height: 2px;
-    background-color: #616160;
+    background-color: #be7475;
 }
 
 .section p {
@@ -193,26 +193,73 @@ header {
     border-radius: 8px;
     padding: 1.5rem;
     transition: all 0.3s ease;
-    border-left: 3px solid transparent;
+    /* border-left: 3px solid transparent; */
+    border: 3px solid transparent;
     box-shadow: 0 2px 10px rgba(0,0,0,0.03);
 }
 
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    border-left-color: #616160;
+    /* border-left-color: #be7475; */
+    border-left-color: #be7475;
 }
 
 .service-card i {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #616160;
+    color: #be7475;
 }
 
 .service-name {
     font-weight: 500;
     color: #444;
     margin-bottom: 0.5rem;
+}
+
+/* Team section */
+.team-container {
+    margin-top: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.team-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-color: #be7475;
+}
+
+.team-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #be7475;
+}
+
+.team-member-name {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.team-member-role {
+    font-size: 0.9rem;
+    color: #616160;
 }
 
 /* Footer styles */
@@ -222,7 +269,7 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: auto;
-    border-top: 1px solid #616160;
+    border-top: 2px solid #be7475;
 }
 
 .footer-content {
@@ -264,5 +311,9 @@ footer {
     
     .services-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
